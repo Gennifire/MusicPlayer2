@@ -59,6 +59,7 @@ namespace musicplayer2
             this.listSongs.Name = "listSongs";
             this.listSongs.Size = new System.Drawing.Size(271, 276);
             this.listSongs.TabIndex = 1;
+            this.listSongs.SelectedIndexChanged += new System.EventHandler(this.listSongs_SelectedIndexChanged);
             // 
             // panel1
             // 

@@ -38,6 +38,12 @@ namespace musicplayer2
             }
         }
 
+        private void listSongs_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //code to play music in player
+            playerTrack.URL = paths[listSongs.SelectedIndex];
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
