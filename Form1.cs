@@ -44,6 +44,7 @@ namespace musicplayer2
             playerTrack.URL = paths[listSongs.SelectedIndex];
         }
 
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -33,9 +33,9 @@ namespace musicplayer2
             this.playerTrack = new AxWMPLib.AxWindowsMediaPlayer();
             this.listSongs = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSelect = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.playerTrack)).BeginInit();
             this.panel1.SuspendLayout();
@@ -45,19 +45,19 @@ namespace musicplayer2
             // playerTrack
             // 
             this.playerTrack.Enabled = true;
-            this.playerTrack.Location = new System.Drawing.Point(280, 67);
+            this.playerTrack.Location = new System.Drawing.Point(12, 67);
             this.playerTrack.Name = "playerTrack";
             this.playerTrack.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("playerTrack.OcxState")));
-            this.playerTrack.Size = new System.Drawing.Size(434, 317);
+            this.playerTrack.Size = new System.Drawing.Size(416, 290);
             this.playerTrack.TabIndex = 0;
             // 
             // listSongs
             // 
             this.listSongs.FormattingEnabled = true;
             this.listSongs.ItemHeight = 16;
-            this.listSongs.Location = new System.Drawing.Point(3, 67);
+            this.listSongs.Location = new System.Drawing.Point(582, 85);
             this.listSongs.Name = "listSongs";
-            this.listSongs.Size = new System.Drawing.Size(271, 276);
+            this.listSongs.Size = new System.Drawing.Size(205, 292);
             this.listSongs.TabIndex = 1;
             this.listSongs.SelectedIndexChanged += new System.EventHandler(this.listSongs_SelectedIndexChanged);
             // 
@@ -68,13 +68,23 @@ namespace musicplayer2
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(716, 61);
+            this.panel1.Size = new System.Drawing.Size(796, 61);
             this.panel1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Ravie", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(11, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(170, 22);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Music player";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(666, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(739, 14);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(36, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -88,29 +98,19 @@ namespace musicplayer2
             this.btnSelect.FlatAppearance.BorderSize = 0;
             this.btnSelect.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnSelect.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnSelect.Location = new System.Drawing.Point(3, 349);
+            this.btnSelect.Location = new System.Drawing.Point(582, 400);
             this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(271, 35);
+            this.btnSelect.Size = new System.Drawing.Size(205, 35);
             this.btnSelect.TabIndex = 3;
             this.btnSelect.Text = "Select Song";
             this.btnSelect.UseVisualStyleBackColor = false;
             this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Ravie", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 22);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Music player";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Ravie", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(276, 413);
+            this.label2.Location = new System.Drawing.Point(136, 449);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(151, 19);
             this.label2.TabIndex = 4;
@@ -120,7 +120,7 @@ namespace musicplayer2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(716, 450);
+            this.ClientSize = new System.Drawing.Size(796, 477);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.panel1);
