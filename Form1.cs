@@ -25,6 +25,7 @@ namespace musicplayer2
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Multiselect = true; //allows to select multiple tracks
 
+
             if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 files = ofd.SafeFileNames; //save names of the track in file array
